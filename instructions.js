@@ -1,15 +1,3 @@
-// NOTE: Do NOT add setup() or draw() in this file
-// setup() and draw() live in main.js
-// This file only defines:
-// 1) drawInstr() → what the instructions screen looks like
-// 2) input handlers → how the player returns to the start screen
-// 3) helper functions specific to this screen
-
-// ------------------------------
-// Main draw function for instructions screen
-// ------------------------------
-// drawInstr() is called from main.js
-// only when currentScreen === "instr"
 function drawInstr() {
   // Light neutral background
   background(240);
@@ -77,12 +65,6 @@ function instrKeyPressed() {
   }
 }
 
-// ------------------------------
-// Button drawing helper (instructions screen)
-// ------------------------------
-// This function is only responsible for drawing the button.
-// It is kept separate so the visual style can be changed
-// without touching input or game logic.
 function drawInstrButton({ x, y, w, h, label }) {
   rectMode(CENTER);
 
